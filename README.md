@@ -17,7 +17,7 @@ This is a standalone client application that connects to the Witch Chat server.
 
 2. Open `client.html` in a web browser:
    - You can open it directly (file://)
-   - Or serve it via the server at: `http://localhost:5000/clientapp/client.html`
+   - Or serve it via the server at: `http://localhost:5000/client.html`
 
 3. Multiple clients can connect simultaneously and share:
    - Chat messages with the witch
@@ -38,3 +38,4 @@ All data is synchronized across clients:
 - Chat messages stored in `messages.json`
 - Shared thoughts stored in `shared_thoughts.json`
 - Uploaded files stored in `file_context.json` and `uploaded_files/`
+
