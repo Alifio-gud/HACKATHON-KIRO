@@ -1,3 +1,7 @@
+"""
+This is the Backend python script to handle file posting and AI chat. you can change to localhost by changing .env (Demo uses our Backend).
+"""
+
 import asyncio
 import websockets
 import json
@@ -150,7 +154,7 @@ class RequestHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         if self.path == '/':
-            self.path = '/iframeindex.html'
+            self.path = '/index.html'
         elif self.path == '/get_thoughts':
             try:
                 thoughts = load_thoughts()
@@ -392,6 +396,6 @@ async def main():
 
 if __name__ == '__main__':
     print("Starting combined server...")
-    print("- HTTP on port 5000 (file uploads)")
-    print("- WebSocket on port 8765 (chat)")
+    print("- HTTP ON (file uploads)")
+    print("- WebSocket ON (chat)")
     asyncio.run(main())

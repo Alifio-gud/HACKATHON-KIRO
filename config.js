@@ -1,2 +1,2 @@
-const SERVER_URL = "http://localhost:5000";
-const WS_URL = "ws://localhost:8765";
+const SERVER_URL = "https://kiro.lintasedu.com";
+const WS_URL = "ws:https://ws.lintasedu.com";
